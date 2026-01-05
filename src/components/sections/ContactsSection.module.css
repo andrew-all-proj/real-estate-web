@@ -1,0 +1,137 @@
+.contactsSection {
+  padding: 30px 0 90px;
+  background: #ffffff;
+}
+
+.contactsInner {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.contactsTitle {
+  margin: 0 0 32px;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #1b1b1b;
+}
+
+.contactsGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.contactsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #6a5f58;
+  font-size: 14px;
+}
+
+.contactRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.contactRow a {
+  color: #6a5f58;
+  text-decoration: none;
+}
+
+.contactIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #c89a86;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.contactIcon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.contactAddress {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #1b1b1b;
+  line-height: 1.5;
+}
+
+.contactAddress strong {
+  font-weight: 600;
+}
+
+.contactSocials {
+  display: flex;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.contactSocials a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #c89a86;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactSocials svg {
+  width: 18px;
+  height: 18px;
+}
+
+.contactsMap {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contactsMap iframe {
+  width: 100%;
+  height: 360px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .contactsInner {
+    padding: 0 40px;
+  }
+
+  .contactsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .contactsSection {
+    padding: 20px 0 70px;
+  }
+
+  .contactsInner {
+    padding: 0 24px;
+  }
+
+  .contactsTitle {
+    font-size: 22px;
+  }
+
+  .contactsMap iframe {
+    height: 280px;
+  }
+}

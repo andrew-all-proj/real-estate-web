@@ -1,0 +1,84 @@
+.contactFormSection {
+  padding: 20px 0 90px;
+  background: #ffffff;
+}
+
+.contactFormInner {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.contactFormContent {
+  background-image: url('/images/background-find.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 60px;
+}
+
+.contactFormTitle {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+}
+
+.contactFormText {
+  margin: 0 0 18px;
+  font-size: 13px;
+  color: #2b2b2b;
+}
+
+.contactForm {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.contactFormInput {
+  height: 42px;
+  padding: 0 14px;
+  border: 1px solid #d7d1cc;
+  background: #ffffff;
+  font-size: 13px;
+  color: #2b2b2b;
+  width: 220px;
+}
+
+.contactFormButton {
+  height: 42px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  background: #2d2b2b;
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .contactFormInner {
+    padding: 0 40px;
+  }
+
+  .contactFormContent {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contactFormSection {
+    padding: 10px 0 70px;
+  }
+
+  .contactFormInner {
+    padding: 0 24px;
+  }
+
+  .contactFormContent {
+    padding: 32px 24px;
+  }
+}

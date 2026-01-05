@@ -139,3 +139,932 @@ a.secondary {
     --button-secondary-border: #1a1a1a;
   }
 }
+
+.hero {
+  width: 100%;
+  height: 850px;
+  background-image: url('/images/background-hero.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 10, 20, 0.2) 0%, rgba(7, 10, 20, 0.75) 70%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  width: min(1200px, 100%);
+  padding: 0 80px;
+  text-align: left;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.heroTop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.heroBrandImage {
+  width: 245px;
+  height: auto;
+  display: block;
+}
+
+.heroSearch {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: #c89a86;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.heroSearch svg {
+  width: 26px;
+  height: 26px;
+}
+
+.heroTitle {
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.heroTitle span {
+  display: block;
+}
+
+.heroSubtitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.heroSubtitle span {
+  display: block;
+}
+
+.heroCTA {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.properties {
+  background: #ffffff;
+  padding: 70px 0 90px;
+}
+
+.propertiesInner {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.propertiesTitle {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 32px;
+  color: #1b1b1b;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 26px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.buttonPrimary {
+  background: #c89a86;
+  color: #fff;
+}
+
+.buttonOutline {
+  background: transparent;
+  color: #c89a86;
+  border-color: #c89a86;
+}
+
+.propertiesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 34px;
+}
+
+.propertyCard {
+  margin: 0;
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.propertyImage {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.propertyCaption {
+  background: #3b3737;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  padding: 16px 18px;
+  line-height: 1.4;
+  text-align: center;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.findSection {
+  padding: 30px 0 90px;
+  background: #ffffff;
+}
+
+.findInner {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.findContent {
+  min-height: 340px;
+  padding: 70px 60px;
+  background-image: url('/images/background-find.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.findTitle {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  line-height: 1.4;
+  max-width: 520px;
+}
+
+.findButtons {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.findButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  background: #2d2b2b;
+  color: #ffffff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid transparent;
+}
+
+.processSection {
+  padding: 20px 0 80px;
+  background: #ffffff;
+}
+
+.processInner {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.processTitle {
+  margin: 0 0 40px;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 46px 30px;
+}
+
+.processCard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.processImage {
+  width: 100px;
+  object-fit: contain;
+  display: block;
+}
+
+.processText {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #2b2b2b;
+  max-width: 210px;
+}
+
+.servicesSection {
+  padding: 40px 0 90px;
+  background: #ffffff;
+}
+
+.servicesInner {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.servicesTitle {
+  margin: 0 0 40px;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 50px 60px;
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.serviceIconImage {
+  width: 81px;
+  height: 81px;
+  object-fit: contain;
+}
+
+.serviceTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #c89a86;
+}
+
+.serviceText {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #2b2b2b;
+}
+
+.serviceButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  background: #c89a86;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.ctaSection {
+  padding: 20px 0 80px;
+  background: #ffffff;
+}
+
+.ctaInner {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.ctaContent {
+  background-image: url('/images/background-find.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 60px 70px;
+  max-width: 980px;
+}
+
+.ctaTitle {
+  margin: 0 0 16px;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+}
+
+.ctaText {
+  margin: 0 0 24px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #2b2b2b;
+  max-width: 520px;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  background: #2d2b2b;
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.teamSection {
+  padding: 30px 0 90px;
+  background: #ffffff;
+}
+
+.teamInner {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.teamTitle {
+  margin: 0 0 36px;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #1b1b1b;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 34px;
+}
+
+.teamCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.teamImage {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  background: #d9d9d9;
+}
+
+.teamName {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+
+.teamRole {
+  margin: 0;
+  font-size: 12px;
+  color: #8a8a8a;
+  line-height: 1.5;
+}
+
+.teamLink {
+  margin-top: 6px;
+  display: inline-flex;
+  align-items: center;
+  color: #c89a86;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  padding-top: 10px;
+}
+
+.teamLink::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 1px;
+  background: #c89a86;
+}
+
+.contactsSection {
+  padding: 30px 0 90px;
+  background: #ffffff;
+}
+
+.contactsInner {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.contactsTitle {
+  margin: 0 0 32px;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #1b1b1b;
+}
+
+.contactsGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.contactsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #6a5f58;
+  font-size: 14px;
+}
+
+.contactRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.contactRow a {
+  color: #6a5f58;
+  text-decoration: none;
+}
+
+.contactIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #c89a86;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.contactIcon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.contactAddress {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #1b1b1b;
+  line-height: 1.5;
+}
+
+.contactAddress strong {
+  font-weight: 600;
+}
+
+.contactSocials {
+  display: flex;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.contactSocials a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #c89a86;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactSocials svg {
+  width: 18px;
+  height: 18px;
+}
+
+.contactsMap {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contactsMap iframe {
+  width: 100%;
+  height: 360px;
+  border: 0;
+  display: block;
+}
+
+.contactFormSection {
+  padding: 20px 0 90px;
+  background: #ffffff;
+}
+
+.contactFormInner {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.contactFormContent {
+  background-image: url('/images/background-find.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 60px;
+}
+
+.contactFormTitle {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+}
+
+.contactFormText {
+  margin: 0 0 18px;
+  font-size: 13px;
+  color: #2b2b2b;
+}
+
+.contactForm {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.contactFormInput {
+  height: 42px;
+  padding: 0 14px;
+  border: 1px solid #d7d1cc;
+  background: #ffffff;
+  font-size: 13px;
+  color: #2b2b2b;
+  width: 220px;
+}
+
+.contactFormButton {
+  height: 42px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  background: #2d2b2b;
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.heroSlogan {
+  margin-top: 22px;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c89a86;
+}
+
+.heroSlogan span {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    height: 720px;
+  }
+
+  .heroContent {
+    padding: 0 40px;
+  }
+
+  .heroTitle {
+    font-size: 38px;
+  }
+
+  .heroSlogan {
+    font-size: 22px;
+  }
+
+  .propertiesInner {
+    padding: 0 40px;
+  }
+
+  .propertiesTitle {
+    font-size: 28px;
+  }
+
+  .propertiesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .findInner {
+    padding: 0 40px;
+  }
+
+  .findContent {
+    padding: 60px 40px;
+  }
+
+  .findTitle {
+    font-size: 26px;
+  }
+
+  .processInner {
+    padding: 0 40px;
+  }
+
+  .processGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .servicesInner {
+    padding: 0 40px;
+  }
+
+  .ctaInner {
+    padding: 0 40px;
+  }
+
+  .ctaContent {
+    padding: 50px 40px 60px;
+  }
+
+  .ctaTitle {
+    font-size: 24px;
+  }
+
+  .teamInner {
+    padding: 0 40px;
+  }
+
+  .teamGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contactsInner {
+    padding: 0 40px;
+  }
+
+  .contactsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contactFormInner {
+    padding: 0 40px;
+  }
+
+  .contactFormContent {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 680px;
+  }
+
+  .heroContent {
+    padding: 0 24px;
+  }
+
+  .heroTop {
+    margin-bottom: 16px;
+  }
+
+  .heroBrandMark,
+  .heroSearch {
+    width: 46px;
+    height: 46px;
+  }
+
+  .heroTitle {
+    font-size: 32px;
+    letter-spacing: 1px;
+  }
+
+  .heroCTA {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .properties {
+    padding: 50px 0 70px;
+  }
+
+  .propertiesInner {
+    padding: 0 24px;
+  }
+
+  .propertiesTitle {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .propertiesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .propertyImage {
+    height: 210px;
+  }
+
+  .findSection {
+    padding: 20px 0 70px;
+  }
+
+  .findInner {
+    padding: 0 24px;
+  }
+
+  .findContent {
+    padding: 40px 24px;
+    min-height: 260px;
+  }
+
+  .findTitle {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  .findButtons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .processSection {
+    padding: 10px 0 60px;
+  }
+
+  .processInner {
+    padding: 0 24px;
+  }
+
+  .processTitle {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+
+  .processGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .processText {
+    max-width: 260px;
+  }
+
+  .servicesSection {
+    padding: 30px 0 70px;
+  }
+
+  .servicesInner {
+    padding: 0 24px;
+  }
+
+  .servicesTitle {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .ctaSection {
+    padding: 10px 0 60px;
+  }
+
+  .ctaInner {
+    padding: 0 24px;
+  }
+
+  .ctaContent {
+    padding: 36px 24px 44px;
+  }
+
+  .ctaTitle {
+    font-size: 20px;
+  }
+
+  .teamSection {
+    padding: 20px 0 70px;
+  }
+
+  .teamInner {
+    padding: 0 24px;
+  }
+
+  .teamTitle {
+    font-size: 22px;
+  }
+
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .teamImage {
+    height: 240px;
+  }
+
+  .contactsSection {
+    padding: 20px 0 70px;
+  }
+
+  .contactsInner {
+    padding: 0 24px;
+  }
+
+  .contactsTitle {
+    font-size: 22px;
+  }
+
+  .contactsMap iframe {
+    height: 280px;
+  }
+
+  .contactFormSection {
+    padding: 10px 0 70px;
+  }
+
+  .contactFormInner {
+    padding: 0 24px;
+  }
+
+  .contactFormContent {
+    padding: 32px 24px;
+  }
+
+  .contactForm {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contactFormInput {
+    width: 100%;
+  }
+}

@@ -1,0 +1,215 @@
+.page {
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.servicesSection {
+  padding: 80px 20px;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.serviceCard {
+  background-color: #f9f9f9;
+  padding: 40px 30px;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.serviceCard:hover {
+  border-color: #007bff;
+  box-shadow: 0 8px 24px rgba(0, 123, 255, 0.1);
+  transform: translateY(-4px);
+}
+
+.serviceIcon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.serviceCard h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.serviceCard p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Process Section */
+.process {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+}
+
+.process h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.processSteps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  min-width: 200px;
+  text-align: center;
+  flex: 1;
+  min-width: 150px;
+}
+
+.stepNumber {
+  font-size: 36px;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.step p {
+  font-size: 13px;
+  color: #666;
+}
+
+.stepArrow {
+  font-size: 24px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* CTA Section */
+.cta {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: white;
+  color: #007bff;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .process h2 {
+    font-size: 28px;
+  }
+
+  .processSteps {
+    gap: 10px;
+  }
+
+  .step {
+    min-width: 120px;
+    padding: 20px;
+  }
+
+  .stepNumber {
+    font-size: 28px;
+  }
+
+  .stepArrow {
+    display: none;
+  }
+
+  .cta h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .servicesSection {
+    padding: 40px 20px;
+  }
+
+  .process {
+    padding: 40px 20px;
+  }
+}

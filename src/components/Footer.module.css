@@ -1,0 +1,163 @@
+.footer {
+  background: #3b393a;
+  color: #f3f3f3;
+  margin-top: 60px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 22px 24px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: #c89a86;
+}
+
+.brandMark {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #c89a86;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.brandMark::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 60%;
+  background: #c89a86;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-left: auto;
+  margin-right: 32px;
+}
+
+.navLink {
+  color: #f3f3f3;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.socials a {
+  color: #c89a86;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials svg {
+  width: 22px;
+  height: 22px;
+}
+
+.bottomRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 11px;
+  color: #bfb7b2;
+}
+
+.privacyLink {
+  color: #bfb7b2;
+  text-decoration: none;
+}
+
+.copy {
+  color: #bfb7b2;
+}
+
+.toTop {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #f3f3f3;
+  color: #f3f3f3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.toTop svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 900px) {
+  .topRow {
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    margin: 0;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .socials {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 18px 16px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .bottomRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

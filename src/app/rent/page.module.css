@@ -1,0 +1,132 @@
+.page {
+  min-height: 100vh;
+}
+
+.header {
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+  color: white;
+  padding: 80px 20px;
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headerContent h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.headerContent p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.filterSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.searchInput,
+.select {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: white;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus,
+.select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.propertiesSection {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+.propertiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ctaSection {
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.ctaSection h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.ctaSection p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.ctaButton {
+  background-color: white;
+  color: #28a745;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 50px 20px;
+  }
+
+  .headerContent h1 {
+    font-size: 32px;
+  }
+
+  .headerContent p {
+    font-size: 16px;
+  }
+
+  .filterSection {
+    grid-template-columns: 1fr;
+  }
+
+  .propertiesGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .ctaSection {
+    padding: 50px 20px;
+  }
+
+  .ctaSection h2 {
+    font-size: 28px;
+  }
+}
