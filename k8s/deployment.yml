@@ -20,5 +20,3 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 3009
-      imagePullSecrets:
-        - name: ghcr-cred
